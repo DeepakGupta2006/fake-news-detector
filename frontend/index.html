@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fake News Detector</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📰 Fake News Detector</h1>
+    <p class="subtitle">Paste a news article or headline below and check whether it looks Real or Fake.</p>
+
+    <textarea id="articleInput" rows="8" placeholder="Paste news article or headline here..."></textarea>
+
+    <div class="row">
+      <button id="analyzeBtn">Analyze</button>
+      <span id="statusText"></span>
+    </div>
+
+    <div id="resultCard" class="result-card hidden">
+      <div id="resultLabel" class="result-label"></div>
+      <div id="resultConfidence" class="result-confidence"></div>
+
+      <div class="bar-wrapper">
+        <div class="bar-track">
+          <div id="barReal" class="bar bar-real"></div>
+          <div id="barFake" class="bar bar-fake"></div>
+        </div>
+        <div class="bar-legend">
+          <span><span class="dot dot-real"></span> Real</span>
+          <span><span class="dot dot-fake"></span> Fake</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="historySection" class="history hidden">
+      <h3>Recent checks</h3>
+      <ul id="historyList"></ul>
+    </div>
+
+    <p class="api-note">
+      API endpoint: <code id="apiUrlDisplay"></code> — change it in
+      <code>script.js</code> if your Flask server runs elsewhere.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

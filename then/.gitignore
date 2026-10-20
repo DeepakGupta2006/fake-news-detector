@@ -1,0 +1,7 @@
+@"
+venv/
+__pycache__/
+*.pyc
+.vscode/
+data/real_dataset.csv
+"@ | Out-File -Encoding ascii .gitignore
