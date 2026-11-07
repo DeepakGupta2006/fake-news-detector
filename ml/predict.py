@@ -39,7 +39,7 @@ def predict(text: str):
     prob_dict = {cls: float(p) for cls, p in zip(classes, proba)}
     confidence = prob_dict[pred_label]
 
-    return pred_label, confidence, prob_dict
+    return pred_label, confidence, prob_dict, probs
 
 
 if __name__ == "__main__":

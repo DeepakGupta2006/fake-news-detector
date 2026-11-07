@@ -8,6 +8,7 @@ import re
 
 # A small built-in stopword list so this doesn't depend on downloading
 # NLTK corpora (keeps the project runnable fully offline).
+
 STOPWORDS = set("""
 a about above after again against all am an and any are aren't as at be
 because been before being below between both but by can't cannot could

@@ -24,6 +24,7 @@ from sklearn.metrics import (
     precision_score,
     recall_score,
 )
+
 from sklearn.model_selection import train_test_split
 
 # Allow running this script directly (python ml/train_model.py) or as a module.
