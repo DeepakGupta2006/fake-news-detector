@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODELS_DIR = os.path.join(BASE_DIR, "models")
 
 app = Flask(__name__)
-CORS(app)  # allow the frontend (opened as a local file / different port) to call this API
+CORS(app) 
 
 model = None
 vectorizer = None
